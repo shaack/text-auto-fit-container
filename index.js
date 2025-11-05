@@ -31,9 +31,16 @@ class TextAutoFit {
         const element = this.element;
         const textElement = element.querySelector('p') || element;
 
-        // Get container dimensions (accounting for padding)
-        const containerWidth = element.clientWidth;
-        const containerHeight = element.clientHeight;
+        // Get computed style to extract padding
+        const style = window.getComputedStyle(element);
+        const paddingLeft = parseFloat(style.paddingLeft) || 0;
+        const paddingRight = parseFloat(style.paddingRight) || 0;
+        const paddingTop = parseFloat(style.paddingTop) || 0;
+        const paddingBottom = parseFloat(style.paddingBottom) || 0;
+
+        // Get container dimensions (subtract padding for available space)
+        const containerWidth = element.clientWidth - paddingLeft - paddingRight;
+        const containerHeight = element.clientHeight - paddingTop - paddingBottom;
 
         let fontSize = this.options.maxFontSize;
         let low = this.options.minFontSize;
@@ -44,11 +51,11 @@ class TextAutoFit {
             fontSize = Math.floor((low + high) / 2);
             textElement.style.fontSize = fontSize + 'px';
 
-            const scrollWidth = textElement.scrollWidth;
-            const scrollHeight = textElement.scrollHeight;
+            const textWidth = textElement.scrollWidth;
+            const textHeight = textElement.scrollHeight;
 
-            // Check if text fits
-            if (scrollWidth <= containerWidth && scrollHeight <= containerHeight) {
+            // Check if text fits within available space
+            if (textWidth <= containerWidth && textHeight <= containerHeight) {
                 // Text fits, try larger
                 low = fontSize + this.options.resolution;
             } else {
