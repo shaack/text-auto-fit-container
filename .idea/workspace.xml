@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f00fa2-af66-4114-981e-eb52c508aabd" name="Changes" comment="Externalized the script call to HTML" />
+    <list default="true" id="85f00fa2-af66-4114-981e-eb52c508aabd" name="Changes" comment="workspace" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +13,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "shaack"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:shaack/text-auto-fit-container.git",
+    "accountId": "199c185a-d422-4604-b320-fbf000bcba1f"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -58,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1762340730209</updated>
       <workItem from="1762340731243" duration="1505000" />
-      <workItem from="1763913072497" duration="322000" />
+      <workItem from="1763913072497" duration="1092000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -84,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763913314583</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="workspace">
+      <option name="closed" value="true" />
+      <created>1763913480840</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1763913480840</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +114,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="fixed padding calculation" />
     <MESSAGE value="Externalized the script call to HTML" />
-    <option name="LAST_COMMIT_MESSAGE" value="Externalized the script call to HTML" />
+    <MESSAGE value="workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace" />
   </component>
 </project>
