@@ -3,7 +3,7 @@
  * Automatically adjusts font size to fit text within its container
  */
 
-class TextAutoFit {
+export class TextAutoFit {
     constructor(element, options = {}) {
         this.element = element;
         this.options = {
@@ -68,16 +68,3 @@ class TextAutoFit {
         textElement.style.fontSize = high + 'px';
     }
 }
-
-// Initialize all elements with data-auto-fit attribute
-document.addEventListener('DOMContentLoaded', () => {
-    const autoFitElements = document.querySelectorAll('[data-auto-fit]');
-
-    autoFitElements.forEach(element => {
-        new TextAutoFit(element, {
-            minFontSize: 12,
-            maxFontSize: 80,
-            resolution: 1
-        });
-    });
-});
